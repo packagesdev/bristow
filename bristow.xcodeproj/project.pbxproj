@@ -1,0 +1,294 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8DD76F9A0486AA7600D96B5E /* bristow.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* bristow.m */; settings = {ATTRIBUTES = (); }; };
+		8DD76F9C0486AA7600D96B5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB779EFE84155DC02AAC07 /* Foundation.framework */; };
+		F41503EB0B7BC836001664F2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F41503EA0B7BC836001664F2 /* SystemConfiguration.framework */; };
+		F415040A0B7BC856001664F2 /* DirectoryService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F41504090B7BC856001664F2 /* DirectoryService.framework */; };
+		F464D6F0199E2C75003A7715 /* NDAlias.m in Sources */ = {isa = PBXBuildFile; fileRef = F464D6ED199E2C75003A7715 /* NDAlias.m */; };
+		F464D6F1199E2C75003A7715 /* NDAlias+AliasFile.m in Sources */ = {isa = PBXBuildFile; fileRef = F464D6EF199E2C75003A7715 /* NDAlias+AliasFile.m */; };
+		F464D6F4199E2CA5003A7715 /* NDResourceFork.m in Sources */ = {isa = PBXBuildFile; fileRef = F464D6F3199E2CA5003A7715 /* NDResourceFork.m */; };
+		F464D6F6199E2CE4003A7715 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F464D6F5199E2CE4003A7715 /* CoreServices.framework */; };
+		F464D6F9199E2D76003A7715 /* NSURL+NDCarbonUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F464D6F8199E2D76003A7715 /* NSURL+NDCarbonUtilities.m */; };
+		F464D6FB199E2E05003A7715 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F464D6FA199E2E05003A7715 /* CoreFoundation.framework */; };
+		F464D6FE199E2E3C003A7715 /* NSString+NDCarbonUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F464D6FD199E2E3C003A7715 /* NSString+NDCarbonUtilities.m */; };
+		F464D701199E2E4D003A7715 /* NDResourceFork+OtherSorces.m in Sources */ = {isa = PBXBuildFile; fileRef = F464D700199E2E4D003A7715 /* NDResourceFork+OtherSorces.m */; };
+		F464D703199E2E8B003A7715 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F464D702199E2E8B003A7715 /* ApplicationServices.framework */; };
+		F4B244401251549C002DD97D /* ICDirectoryServicesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B2443E1251549C002DD97D /* ICDirectoryServicesManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8DD76F9E0486AA7600D96B5E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08FB7796FE84155DC02AAC07 /* bristow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bristow.m; sourceTree = "<group>"; };
+		08FB779EFE84155DC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32A70AAB03705E1F00C91783 /* bristow_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bristow_Prefix.pch; sourceTree = "<group>"; };
+		8DD76FA10486AA7600D96B5E /* bristow */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = bristow; sourceTree = BUILT_PRODUCTS_DIR; };
+		F41503EA0B7BC836001664F2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = /System/Library/Frameworks/SystemConfiguration.framework; sourceTree = "<absolute>"; };
+		F41504090B7BC856001664F2 /* DirectoryService.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DirectoryService.framework; path = /System/Library/Frameworks/DirectoryService.framework; sourceTree = "<absolute>"; };
+		F464D6EC199E2C75003A7715 /* NDAlias.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NDAlias.h; path = submodules/ndalias/Classes/NDAlias.h; sourceTree = "<group>"; };
+		F464D6ED199E2C75003A7715 /* NDAlias.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NDAlias.m; path = submodules/ndalias/Classes/NDAlias.m; sourceTree = "<group>"; };
+		F464D6EE199E2C75003A7715 /* NDAlias+AliasFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NDAlias+AliasFile.h"; path = "submodules/ndalias/Classes/NDAlias+AliasFile.h"; sourceTree = "<group>"; };
+		F464D6EF199E2C75003A7715 /* NDAlias+AliasFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NDAlias+AliasFile.m"; path = "submodules/ndalias/Classes/NDAlias+AliasFile.m"; sourceTree = "<group>"; };
+		F464D6F2199E2CA5003A7715 /* NDResourceFork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NDResourceFork.h; path = submodules/ndalias/Classes/NDResourceFork.h; sourceTree = "<group>"; };
+		F464D6F3199E2CA5003A7715 /* NDResourceFork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NDResourceFork.m; path = submodules/ndalias/Classes/NDResourceFork.m; sourceTree = "<group>"; };
+		F464D6F5199E2CE4003A7715 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		F464D6F7199E2D76003A7715 /* NSURL+NDCarbonUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSURL+NDCarbonUtilities.h"; path = "submodules/ndalias/Classes/NSURL+NDCarbonUtilities.h"; sourceTree = "<group>"; };
+		F464D6F8199E2D76003A7715 /* NSURL+NDCarbonUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSURL+NDCarbonUtilities.m"; path = "submodules/ndalias/Classes/NSURL+NDCarbonUtilities.m"; sourceTree = "<group>"; };
+		F464D6FA199E2E05003A7715 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		F464D6FC199E2E3C003A7715 /* NSString+NDCarbonUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+NDCarbonUtilities.h"; path = "submodules/ndalias/Classes/NSString+NDCarbonUtilities.h"; sourceTree = "<group>"; };
+		F464D6FD199E2E3C003A7715 /* NSString+NDCarbonUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+NDCarbonUtilities.m"; path = "submodules/ndalias/Classes/NSString+NDCarbonUtilities.m"; sourceTree = "<group>"; };
+		F464D6FF199E2E4D003A7715 /* NDResourceFork+OtherSorces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NDResourceFork+OtherSorces.h"; path = "submodules/ndalias/Classes/NDResourceFork+OtherSorces.h"; sourceTree = "<group>"; };
+		F464D700199E2E4D003A7715 /* NDResourceFork+OtherSorces.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NDResourceFork+OtherSorces.m"; path = "submodules/ndalias/Classes/NDResourceFork+OtherSorces.m"; sourceTree = "<group>"; };
+		F464D702199E2E8B003A7715 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		F4B2443E1251549C002DD97D /* ICDirectoryServicesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICDirectoryServicesManager.m; sourceTree = SOURCE_ROOT; };
+		F4B2443F1251549C002DD97D /* ICDirectoryServicesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICDirectoryServicesManager.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DD76F9B0486AA7600D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F464D703199E2E8B003A7715 /* ApplicationServices.framework in Frameworks */,
+				F464D6FB199E2E05003A7715 /* CoreFoundation.framework in Frameworks */,
+				F464D6F6199E2CE4003A7715 /* CoreServices.framework in Frameworks */,
+				8DD76F9C0486AA7600D96B5E /* Foundation.framework in Frameworks */,
+				F41503EB0B7BC836001664F2 /* SystemConfiguration.framework in Frameworks */,
+				F415040A0B7BC856001664F2 /* DirectoryService.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* bristow */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+				08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = bristow;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F464D6EB199E2C5D003A7715 /* NDAlias */,
+				32A70AAB03705E1F00C91783 /* bristow_Prefix.pch */,
+				F41503FF0B7BC83A001664F2 /* OpenDirectory4Ever */,
+				08FB7796FE84155DC02AAC07 /* bristow.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				F464D6FA199E2E05003A7715 /* CoreFoundation.framework */,
+				08FB779EFE84155DC02AAC07 /* Foundation.framework */,
+				F464D702199E2E8B003A7715 /* ApplicationServices.framework */,
+				F464D6F5199E2CE4003A7715 /* CoreServices.framework */,
+				F41504090B7BC856001664F2 /* DirectoryService.framework */,
+				F41503EA0B7BC836001664F2 /* SystemConfiguration.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DD76FA10486AA7600D96B5E /* bristow */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F41503FF0B7BC83A001664F2 /* OpenDirectory4Ever */ = {
+			isa = PBXGroup;
+			children = (
+				F4B2443F1251549C002DD97D /* ICDirectoryServicesManager.h */,
+				F4B2443E1251549C002DD97D /* ICDirectoryServicesManager.m */,
+			);
+			name = OpenDirectory4Ever;
+			sourceTree = "<group>";
+		};
+		F464D6EB199E2C5D003A7715 /* NDAlias */ = {
+			isa = PBXGroup;
+			children = (
+				F464D6EC199E2C75003A7715 /* NDAlias.h */,
+				F464D6ED199E2C75003A7715 /* NDAlias.m */,
+				F464D6EE199E2C75003A7715 /* NDAlias+AliasFile.h */,
+				F464D6EF199E2C75003A7715 /* NDAlias+AliasFile.m */,
+				F464D6F2199E2CA5003A7715 /* NDResourceFork.h */,
+				F464D6F3199E2CA5003A7715 /* NDResourceFork.m */,
+				F464D6FF199E2E4D003A7715 /* NDResourceFork+OtherSorces.h */,
+				F464D700199E2E4D003A7715 /* NDResourceFork+OtherSorces.m */,
+				F464D6FC199E2E3C003A7715 /* NSString+NDCarbonUtilities.h */,
+				F464D6FD199E2E3C003A7715 /* NSString+NDCarbonUtilities.m */,
+				F464D6F7199E2D76003A7715 /* NSURL+NDCarbonUtilities.h */,
+				F464D6F8199E2D76003A7715 /* NSURL+NDCarbonUtilities.m */,
+			);
+			name = NDAlias;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DD76F960486AA7600D96B5E /* bristow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB927408733DD40010E9CD /* Build configuration list for PBXNativeTarget "bristow" */;
+			buildPhases = (
+				8DD76F990486AA7600D96B5E /* Sources */,
+				8DD76F9B0486AA7600D96B5E /* Frameworks */,
+				8DD76F9E0486AA7600D96B5E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = bristow;
+			productInstallPath = "$(HOME)/bin";
+			productName = bristow;
+			productReference = 8DD76FA10486AA7600D96B5E /* bristow */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 1DEB927808733DD40010E9CD /* Build configuration list for PBXProject "bristow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* bristow */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DD76F960486AA7600D96B5E /* bristow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DD76F990486AA7600D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F464D6F4199E2CA5003A7715 /* NDResourceFork.m in Sources */,
+				8DD76F9A0486AA7600D96B5E /* bristow.m in Sources */,
+				F4B244401251549C002DD97D /* ICDirectoryServicesManager.m in Sources */,
+				F464D6F0199E2C75003A7715 /* NDAlias.m in Sources */,
+				F464D6FE199E2E3C003A7715 /* NSString+NDCarbonUtilities.m in Sources */,
+				F464D6F9199E2D76003A7715 /* NSURL+NDCarbonUtilities.m in Sources */,
+				F464D6F1199E2C75003A7715 /* NDAlias+AliasFile.m in Sources */,
+				F464D701199E2E4D003A7715 /* NDResourceFork+OtherSorces.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB927508733DD40010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = bristow_Prefix.pch;
+				INSTALL_PATH = "$(HOME)/bin";
+				PRODUCT_NAME = bristow;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		1DEB927608733DD40010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = bristow_Prefix.pch;
+				INSTALL_PATH = "$(HOME)/bin";
+				PRODUCT_NAME = bristow;
+			};
+			name = Release;
+		};
+		1DEB927908733DD40010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_VERSION_ppc = 3.3;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				MACOSX_DEPLOYMENT_TARGET_ppc = 10.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+				SDKROOT_ppc = /Developer/SDKs/MacOSX10.2.8.sdk;
+			};
+			name = Debug;
+		};
+		1DEB927A08733DD40010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB927408733DD40010E9CD /* Build configuration list for PBXNativeTarget "bristow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB927508733DD40010E9CD /* Debug */,
+				1DEB927608733DD40010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB927808733DD40010E9CD /* Build configuration list for PBXProject "bristow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB927908733DD40010E9CD /* Debug */,
+				1DEB927A08733DD40010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
