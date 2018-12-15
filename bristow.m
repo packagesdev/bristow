@@ -81,18 +81,13 @@ int main (int argc, const char * argv[])
 		
 		if (realpath(argv[0],tResolvedPath)!=NULL)
 		{
-			NSString * tFile;
-        
-			tFile=[NSString stringWithUTF8String:tResolvedPath];
+			NSString * tFile=[NSString stringWithUTF8String:tResolvedPath];
 			
 			if (tFile!=nil)
 			{
-				NSFileManager * tFileManager;
-				NSString * tAliasFile;
+				NSFileManager * tFileManager=[NSFileManager defaultManager];
 				
-				tFileManager=[NSFileManager defaultManager];
-				
-				tAliasFile=[NSString stringWithUTF8String:argv[1]];
+				NSString * tAliasFile=[NSString stringWithUTF8String:argv[1]];
 				
 				if (tAliasFile!=nil)
 				{
@@ -100,25 +95,20 @@ int main (int argc, const char * argv[])
 					{
 						// We need to locate the current user home folder
 						
-						NSString * tUserName;
 						uid_t tUID;
 						gid_t tGID;
 						
-						tUserName=(NSString *)SCDynamicStoreCopyConsoleUser(NULL,&tUID,&tGID);
+						NSString * tUserName=(NSString *)SCDynamicStoreCopyConsoleUser(NULL,&tUID,&tGID);
 						
 						if (tUserName!=nil && [tUserName isEqualToString:@"loginwindow"]==NO)
 						{
 							// Is it the console user?
 							
-							NSString * tHomeFolder;
-							
-							tHomeFolder=NSHomeDirectoryForUser(tUserName);
+							NSString * tHomeFolder=NSHomeDirectoryForUser(tUserName);
 							
 							if (tHomeFolder!=nil)
 							{
-								NSString * tAbsoluteAlias;
-											
-								tAbsoluteAlias=[tHomeFolder stringByAppendingPathComponent:tAliasFile];
+								NSString * tAbsoluteAlias=[tHomeFolder stringByAppendingPathComponent:tAliasFile];
 								
 								if ([tFileManager fileExistsAtPath:tAbsoluteAlias]==NO)
 								{
@@ -143,15 +133,11 @@ int main (int argc, const char * argv[])
 					}
 					else if (tInstall4AllUsers==YES)
 					{	
-						NSArray * tAllUsersAccount;
-						
-						tAllUsersAccount=[[ICDirectoryServicesManager defaultManager] usersArray];
+						NSArray * tAllUsersAccount=[[ICDirectoryServicesManager defaultManager] usersArray];
 						
 						if (tAllUsersAccount!=nil)
 						{
-							NSEnumerator * tEnumerator;
-							
-							tEnumerator=[tAllUsersAccount objectEnumerator];
+							NSEnumerator * tEnumerator=[tAllUsersAccount objectEnumerator];
 							
 							if (tEnumerator!=nil)
 							{
@@ -160,48 +146,34 @@ int main (int argc, const char * argv[])
 								
 								while (tDictionary=[tEnumerator nextObject])
 								{
-									NSNumber * tUIDNumber;
-									
-									tUIDNumber=[tDictionary objectForKey:@"ID"];
+									NSNumber * tUIDNumber=[tDictionary objectForKey:@"ID"];
 									
 									if (tUIDNumber!=nil)
 									{
-										int tUID;
-										
-										tUID=[tUIDNumber intValue];
+										int tUID=[tUIDNumber intValue];
 										
 										if (tUID>=500)
 										{
-											NSString * tUserName;
-									
-											tUserName=[tDictionary objectForKey:@"Name"];
+											NSString * tUserName=[tDictionary objectForKey:@"Name"];
 											
 											if (tUserName!=nil)
 											{
-												NSString * tHomeFolder;
-									
-												tHomeFolder=NSHomeDirectoryForUser(tUserName);
+												NSString * tHomeFolder=NSHomeDirectoryForUser(tUserName);
 												
 												if (tHomeFolder!=nil)
 												{
-													NSString * tAbsoluteAlias;
-													
-													tAbsoluteAlias=[tHomeFolder stringByAppendingPathComponent:tAliasFile];
+													NSString * tAbsoluteAlias=[tHomeFolder stringByAppendingPathComponent:tAliasFile];
 													
 													if ([tFileManager fileExistsAtPath:tAbsoluteAlias]==NO)
 													{
-														struct passwd * tPasswd;
-														
 														[[NDAlias aliasWithPath:tFile] writeToFile:tAbsoluteAlias];
 														
 														// Set correct owner and group
 														
-														tPasswd=getpwuid(tUID);
+														struct passwd * tPasswd=getpwuid(tUID);
 														
 														if (tPasswd!=nil)
-														{
 															chown([tAbsoluteAlias fileSystemRepresentation],tUID,tPasswd->pw_gid);
-														}
 													}
 													else
 													{
